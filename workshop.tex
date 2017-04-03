@@ -1,0 +1,20 @@
+\section{Workshop}
+\subsection{Getting Started}
+So that we can make sure the Arduino is working properly with your computer we are going to do something really simple. Lets make it blink!\\
+
+% Blinking led example goes here
+
+\subsection{Motors}
+Our rovers have 4 weeks, each side is connected to a single output so the rover drives more like a tank than a car. To drive the motors we can't just connect the Arduino directly as those pins can only provide low currents (up to 20mA) where as the motors may draw quite high currents (1 Amp or more). In order to overcome this issue we are using a H-Bridge chip, which allows us to control each pair of motors in both direction and speed. If you are doing this yourself you can use a Motor Driver Shield, which incorporates a H-Bridge with some additional circuitry to provide power.\\
+
+% H Bridge photo with description
+
+With this we have a few inputs we can control for each pair of motors. They are listed below:
+
+\begin{itemize}
+	\item Motor Enable - Enables the motors (We can also pulse this pin to control speed)
+	\item Motor Direction A - Enables the A part of the H-Bridge
+	\item Motor Direction B - Enables the B part of the H-Bridge
+\end{itemize}
+
+\newpage
